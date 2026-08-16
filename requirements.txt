@@ -1,0 +1,8 @@
+torch
+torchvision
+albumentations==1.4.0
+opencv-python
+scikit-learn
+pyyaml
+matplotlib
+numpy

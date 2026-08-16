@@ -1,0 +1,6 @@
+_base_: adnet_dualstream.yaml
+loss:
+  type: focal
+  use_class_weights: true
+  focal_gamma: 2.0
+

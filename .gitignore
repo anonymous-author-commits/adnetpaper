@@ -1,0 +1,33 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# ADNI imaging data — NOT redistributable under the ADNI Data Use Agreement
+data/
+*.nii
+*.nii.gz
+*.dcm
+
+# Trained model weights / large binaries
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.h5
+
+# Experiment outputs and generated artifacts
+outputs/
+results/
+plots/
+gradcam_outputs/
+
+# OS cruft
+.DS_Store
+Thumbs.db

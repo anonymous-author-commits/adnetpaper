@@ -1,0 +1,40 @@
+seed: 42
+deterministic: true
+device: null
+
+data:
+  root_dir: data/Alzheimers-ADNI
+  img_size: 224
+  num_workers: 0
+  eval_split: test
+  augmentation: baseline
+  split:
+    strategy: auto
+    val_ratio: 0.2
+  normalization:
+    mean: [0.5, 0.5, 0.5]
+    std: [0.5, 0.5, 0.5]
+    clahe: true
+
+model:
+  type: adnet_dualstream
+  dropout_p: 0.1
+
+training:
+  batch_size: 64
+  epochs: 25
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  patience: 5
+
+loss:
+  type: cross_entropy
+  use_class_weights: true
+  focal_gamma: 2.0
+
+evaluation:
+  split: test
+  compute_roc_auc: true
+
+checkpoint: null
+

@@ -1,0 +1,5 @@
+_base_: base.yaml
+model:
+  type: efficientnet_b0
+  dropout_p: 0.1
+

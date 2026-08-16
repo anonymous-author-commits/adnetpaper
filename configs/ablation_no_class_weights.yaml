@@ -1,0 +1,5 @@
+_base_: adnet_dualstream.yaml
+loss:
+  type: cross_entropy
+  use_class_weights: false
+
